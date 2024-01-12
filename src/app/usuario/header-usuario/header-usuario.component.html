@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="header-usuario.component.css">
+</head>
+<body>
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+    
+        <a href="#" class="logo"><img [src]="logoblanco"[style.width.px]="200" [style.height.px]="100"><span></span></a>
+        
+        <nav class="navbar">
+          <a routerLink="/home" routerLinkActive="active-link">Inicio</a>
+          <a routerLink="/servicios" routerLinkActive="active-link">Servicios</a>
+          <a routerLink="/acerca" routerLinkActive="active-link">Historial</a>
+          <a routerLink="/contacto" routerLinkActive="active-link">Contacto</a>
+          <a routerLink="/home" routerLinkActive="active-link">Cerrar sesión</a>
+        </nav>
+    
+
+
+        <div class="icons">
+          <a routerLink="/login" routerLinkActive="active-link" class="fas fa-user"></a>
+        </div>
+    
+      </header>
+</body>
+</html>

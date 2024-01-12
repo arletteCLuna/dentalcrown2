@@ -1,0 +1,126 @@
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff; /* Blanco */
+      background-image: url('/assets/imagenes/dentist2.jpg');
+      margin: 0;
+      padding: 0;
+      
+    }
+  
+    #contenedor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      
+      
+    }
+  
+    #central {
+      background-color: #7187e9; /* Azul */
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 800px;
+      color: #ffffff; /* Texto blanco */
+    }
+  
+    #registro {
+      text-align: center;
+    }
+  
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color:rgb(253, 253, 253);
+      text-align: center;
+    }
+  
+    .titulo {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+  
+    #registroform {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas para los elementos del formulario */
+      grid-gap: 10px; /* Ajusta el espacio entre columnas */
+    }
+  
+    label {
+      grid-column: span 1; /* Las etiquetas abarcan una columna */
+      margin-bottom: 5px;
+      color: black;
+    }
+  
+    input,
+    select {
+      grid-column: span 1; /* Los inputs abarcan una columna */
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+  
+    button {
+      grid-column: span 2; /* El botón abarca ambas columnas */
+      background-color: #022136; /* Azul más oscuro */
+      color: #ffffff;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  
+    button:hover {
+      background-color: #000102; /* Cambio de color al pasar el ratón */
+    }
+</style>
+
+
+<br><br>
+  <div id="contenedor">
+    <div id="central">
+
+    <h1>Registro</h1>
+      <div id="registro">
+        
+        <div class="titulo">
+       
+          
+        </div>
+        <form id="registroform">
+
+
+          <label for="nombre">Nombre(s):</label>
+          <input type="text" name="nombre" placeholder="Nombre" required>
+          <label for="apellido_paterno">Apellido Paterno:</label>
+          <input type="text" name="apellido_paterno" placeholder="Apellido Paterno" required>
+          <label for="apellido_materno">Apellido Materno:</label>
+          <input type="text" name="apellido_materno" placeholder="Apellido Materno" required>
+          <label for="sexo">Sexo:</label>
+          <select name="sexo" required>
+            <option value="" disabled selected>Selecciona el sexo</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+          </select>
+          <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+          <input type="date" name="fecha_nacimiento" required>
+          <label for="correo">Correo Electrónico:</label>
+          <input type="email" name="correo" placeholder="Correo Electrónico" required>
+          <label for="nombre_usuario">Nombre de Usuario:</label>
+          <input type="text" name="nombre_usuario" placeholder="Nombre de Usuario" required>
+          <label for="contrasena">Contraseña:</label>
+          <input type="password" name="contrasena" required>
+          <label for="confirmar_contrasena">Confirmar Contraseña:</label>
+          <input type="password" name="confirmar_contrasena" required>
+          <button type="submit" title="Registrar" name="Registrar">Registrarse</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
